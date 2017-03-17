@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "KenCodeView.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    KenCodeView *_KenCodeView;
+}
 
 @end
 
@@ -17,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _KenCodeView = [[KenCodeView alloc] initWithFrame:CGRectMake(50, 100, 82, 32)];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
+    [_KenCodeView addGestureRecognizer:tap];
+    [self.view addSubview:_KenCodeView];
+}
+
+- (void)tapClick:(UITapGestureRecognizer*)tap{
+    [_KenCodeView changeCode];
+    NSLog(@"%@",_KenCodeView.changeString);
 }
 
 

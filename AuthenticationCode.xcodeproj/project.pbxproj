@@ -13,6 +13,7 @@
 		6C63CE0B1E7BDB7D007AE59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C63CE091E7BDB7D007AE59A /* Main.storyboard */; };
 		6C63CE0D1E7BDB7D007AE59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C63CE0C1E7BDB7D007AE59A /* Assets.xcassets */; };
 		6C63CE101E7BDB7D007AE59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C63CE0E1E7BDB7D007AE59A /* LaunchScreen.storyboard */; };
+		6C63CE1D1E7BDC0B007AE59A /* KenCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C63CE1C1E7BDC0B007AE59A /* KenCodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		6C63CE0C1E7BDB7D007AE59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C63CE0F1E7BDB7D007AE59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C63CE111E7BDB7D007AE59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C63CE1B1E7BDC0B007AE59A /* KenCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KenCodeView.h; sourceTree = "<group>"; };
+		6C63CE1C1E7BDC0B007AE59A /* KenCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KenCodeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		6C63CDFF1E7BDB7D007AE59A /* AuthenticationCode */ = {
 			isa = PBXGroup;
 			children = (
+				6C63CE171E7BDBCE007AE59A /* KenCodeView */,
 				6C63CE031E7BDB7D007AE59A /* AppDelegate.h */,
 				6C63CE041E7BDB7D007AE59A /* AppDelegate.m */,
 				6C63CE061E7BDB7D007AE59A /* ViewController.h */,
@@ -77,6 +81,15 @@
 				6C63CE011E7BDB7D007AE59A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C63CE171E7BDBCE007AE59A /* KenCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				6C63CE1B1E7BDC0B007AE59A /* KenCodeView.h */,
+				6C63CE1C1E7BDC0B007AE59A /* KenCodeView.m */,
+			);
+			path = KenCodeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C63CE1D1E7BDC0B007AE59A /* KenCodeView.m in Sources */,
 				6C63CE081E7BDB7D007AE59A /* ViewController.m in Sources */,
 				6C63CE051E7BDB7D007AE59A /* AppDelegate.m in Sources */,
 				6C63CE021E7BDB7D007AE59A /* main.m in Sources */,
